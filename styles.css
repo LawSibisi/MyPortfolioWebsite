@@ -17,7 +17,7 @@ header {
     position: absolute;
     left: 20px;
     top: 20px;
-    height: 170px; /* Adjust the height of my logo */
+    height: 170px; /* Adjust the height of the logo */
 }
 
 nav ul {
@@ -46,6 +46,7 @@ h2 {
 .images, .skills {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping of elements in smaller screens */
 }
 
 .side-image, .header-image {
@@ -53,31 +54,24 @@ h2 {
     margin: 10px 0; /* Add spacing around images */
 }
 
-
-.Tech-image{ /*sizing my tech image under experiences */
-
+.Tech-image { /* Sizing the tech image under experiences */
     height: 300px;
     width: 300px;
 }
 
 .experience {
-    width: 45%; /* aligning my skills lists */
-
+    width: 45%; /* Aligning the skills lists */
 }
 
-.expheader{
-
-    text-align: center; /* place experience heading in the center */
+.expheader {
+    text-align: center; /* Center the experience heading */
 }
-
-
 
 .skills div {
     width: 55%;
     text-align: center;
     margin-left: 25%;
 }
-
 
 footer {
     text-align: center;
@@ -93,3 +87,41 @@ footer {
     margin: 0 10px;
 }
 
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .side-image, .header-image, .experience, .skills div {
+        width: 100%; /* Make elements full width on smaller screens */
+    }
+
+    .logo {
+        height: 100px; /* Adjust the logo size for smaller screens */
+        top: 10px;
+        left: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0; /* Stack navigation items */
+        text-align: center;
+    }
+
+    .skills div {
+        margin-left: 0; /* Center skills on smaller screens */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .Tech-image {
+        height: 200px;
+        width: 200px; /* Reduce tech image size for very small screens */
+    }
+}
