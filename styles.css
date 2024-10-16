@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3e7ee;
+}
+
+header {
+    background: #1a8a9e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 170px; /* Adjust the height of my logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.images, .skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-image, .header-image {
+    width: 45%;
+    margin: 10px 0; /* Add spacing around images */
+}
+
+
+.Tech-image{ /*sizing my tech image under experiences */
+
+    height: 300px;
+    width: 300px;
+}
+
+.experience {
+    width: 45%; /* aligning my skills lists */
+
+}
+
+.expheader{
+
+    text-align: center; /* place experience heading in the center */
+}
+
+
+
+.skills div {
+    width: 55%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1a8a9e;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.socials a {
+    margin: 0 10px;
+}
+
